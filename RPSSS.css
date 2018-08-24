@@ -1,0 +1,27 @@
+#title {
+  font-size: 4em;
+  text-align: center;
+}
+#btn-container {
+  margin-top: 20px;
+  text-align: center;
+}
+.buttons {
+  font-size: 3em;
+  display: inline-block;
+  margin: 20px;
+  padding: 20px;
+  border: solid black;
+}
+#gameText {
+  margin-top: 10px;
+  font-size: 3em;
+  text-align: center;
+}
+#score {
+  position: absolute;
+  font-size: 2em;
+}
+body {
+  user-select:none;
+}
