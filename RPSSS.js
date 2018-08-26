@@ -26,8 +26,17 @@ function comSelect(){
   return com;
 } //end of com sel func
 function playRpsss(player) {
-  //document.getElementById("player").style = "background-color";
+  var buttons = document.getElementsByClassName("buttons");
+  for (i = 0; i < buttons.length; i++) {
+    buttons[i].style = "background-image: none;";
+  }
   comSelect();
+  if (player === com) {
+    document.getElementById(player).style = "background-image: linear-gradient(#FFFF00, #BBBB00, #777700);";
+  } else {
+    document.getElementById(player).style = "background-image: linear-gradient(#00FF00, #009900, #005500);";
+    document.getElementById(com).style = "background-image: linear-gradient(#FF0000, #990000, #550000);";
+  }
   if (player === "rock") {
     switch(com) {
     case "paper":
